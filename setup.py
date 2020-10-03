@@ -20,9 +20,6 @@ def inicio():
             seguidor = req.get(dict_['followers_url'])
             dict_['seguindo'] = seguindo.json()
             dict_['seguidor'] = seguidor.json()
-            print(dict_['seguindo'])
-            print('-----------------------------------------------------------------------------')
-            print(dict_['seguidor'])
         except:
             pass
         
