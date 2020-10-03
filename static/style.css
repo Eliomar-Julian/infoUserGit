@@ -1,0 +1,168 @@
+@charset "utf-8";
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-image: url('https://wallpapercave.com/wp/wp3082255.jpg');
+    background-attachment: fixed;
+}
+#div-img {
+    width: 300pt;
+    height: 200pt;
+    border: whitesmoke solid 2px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 128, 128, 0.514) 1px 1px 5px;
+    margin: auto;
+    text-align: center;
+    font-size: 15pt;
+    font-family: 'Lucida Sans', sans-serif;
+    color: black;
+}
+#div-img img {
+    width: 300pt;
+    height: 200pt;
+}
+#div-img h2{
+    margin-top: -15%;
+    color: teal;
+    text-shadow: 1px 2px 5px rgba(0,0,0,0.6);
+}
+#div-form{
+    width: 100%;
+    margin: auto;
+    padding: 10pt;
+    text-align: center;
+
+}
+#div-form input[type='text']{
+    width: 500pt;
+    font-size: 20pt;
+    color: teal;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}
+#div-form input[type='submit']{
+    padding: 10px;
+    border-radius: 10px;
+    width: 70px;
+    font-size: 25pt;
+    background-color: rgb(83, 10, 83);
+    color: whitesmoke;
+    border: none;
+    margin-top: 8px;
+    transition: 1s cubic-bezier(2);
+}
+#div-form input[type='submit']:hover{
+    background-color: teal;
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+    transition: 1s;
+}
+#sem-perfil{
+    margin: auto;
+    border-radius: 10px;
+    padding: 10pt;
+    color: teal;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(77, 12, 77);
+    width: max-content;
+}
+#avatar img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: unset 2px red;
+    margin: auto;
+}
+#avatar{
+    text-align: center;
+    font-size: 20pt;
+    text-decoration: underline;
+    margin: auto;
+    padding: 20pt;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+#avatar h4 a {
+   text-decoration: none;
+}
+#avatar h4{
+    color: white;
+    background-image: linear-gradient(to right,rgb(74, 7, 83), rgb(121, 12, 136));
+    border-radius: 10px;
+    padding: 10px;
+}
+#div-repos{
+    background-color: teal;
+    border-radius: 10px;
+    width: 30%;
+    align-items: center;
+    margin-left: 40pt;
+    float: left;
+}
+#div-repos button{
+    background-image: radial-gradient(rgb(74, 7, 83), rgb(103, 17, 160));
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    margin: 20pt;
+    font-family: Arial, sans-serif;
+}
+#div-repos button a{
+    text-decoration: none;
+}
+#div-repos button a h3{
+    color: white;
+}
+#div-repos button a .datas {
+    color: teal;
+    font-weight: 500;
+}
+#div-repos button a p{
+    color: white;
+}
+
+#perfil{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: teal;
+    border-radius: 10px;
+    width: 30%;
+    align-items: center;
+    margin-left: 15pt;
+    float: left;
+    color: white;
+}
+#perfil div{
+    background-image: radial-gradient(rgb(74, 7, 83), rgb(103, 17, 160));
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    margin: 25pt;
+    font-family: Arial, sans-serif;
+}
+
+#comunidade{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: teal;
+    border-radius: 10px;
+    width: 30%;
+    align-items: center;
+    margin-left: 15pt;
+    float: left;
+    color: white;
+}
+#comunidade a img{
+    width: 50pt;
+    height: 50pt;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px purple;
+    float: left;
+    margin: 10pt;
+}
