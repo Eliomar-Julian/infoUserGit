@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import requests as req
+from time import strftime
 app = Flask(__name__)
 
 @app.route('/', methods=['POST', 'GET'])

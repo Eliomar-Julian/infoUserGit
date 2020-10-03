@@ -10,7 +10,8 @@
 </head>
 <body onload="rolar()">
     <div id="div-img">
-        <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--i_sb3chq--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/fk0849hvg2rt13bpqhjy.jpg" alt="logo-git">
+        <img 
+            src="https://res.cloudinary.com/practicaldev/image/fetch/s--i_sb3chq--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/fk0849hvg2rt13bpqhjy.jpg">
         <h2>Informações de usuários</h2>
     </div>
     <div id="div-form">
@@ -60,21 +61,27 @@
             Informações
         </h1>
         <div>
-            <p>Id: {{ dict_.id}}</p>
-            <p>login: {{ dict_.login }}</p>
-            <p>Blog: {{ dict_.blog }}</p>
-            <p>Localização: {{ dict_.location }}</p>
-            <p>Email: {{ dict_.email }}</p>
-            <p>Descrição:</p>
-            <textarea name="desc" id="text-area" cols="30" rows="10" style="border-radius: 10px;">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Id: <input type="text" value="{{ dict_.id }}">&nbsp;&nbsp;<img src="{{ url_for('static', filename='id.svg')}}" style="width: 20pt; height: 20pt; border-radius: 50%"/></p>
+            <p>login: <input type="text" value="{{ dict_.login }}">&nbsp;&nbsp;<img src="{{ url_for('static', filename='man.svg')}}" style="width: 20pt; height: 20pt; border-radius: 50%"/></p>
+            <p>Blog: <input type="text" value="{{ dict_.blog }}">&nbsp;&nbsp; <a href="{{ dict_.blog }}"><img src="{{ url_for('static', filename='blog.svg')}}" style="width: 20pt; height: 20pt; border-radius: 50%"/></a></p>
+            <p>Local: <input type="text" value="{{ dict_.location }}">&nbsp;&nbsp;<img src="{{ url_for('static', filename='map.svg')}}" style="width: 20pt; height: 20pt; border-radius: 50%"/></p>
+            <p>Email: <input type="text" value="{{ dict_.email }}"> &nbsp;&nbsp;<img src="{{ url_for('static', filename='gmail.svg')}}" style="width: 20pt; height: 20pt; border-radius: 50%"/></p>
+            <p style="font-weight: 500;">Quem sou:</p>
+            <textarea name="desc" id="text-area" cols="20" rows="10" style="border-radius: 10px; font-family:Arial, sans-serif; font-size: 12pt; color: teal; text-align: left; padding: 20px;">
                 {{ dict_.bio }}
             </textarea>
-            <p>Twitter: <a href="{{ dict_.twitter_username }}" target="_blank"><img src="https://imagens.canaltech.com.br/empresas/652.400.jpg" alt="" style="width: 20pt; height: 20pt; border-radius: 50%; margin: auto;"></a></p>
+            <p>Twitter:
+                <input type="text" value="{{ dict_.twitter_username}}">&nbsp;&nbsp; 
+                <a href="https://www.twitter.com/{{ dict_.twitter_username }}" target="_blank">
+                    <img src="https://imagens.canaltech.com.br/empresas/652.400.jpg"
+                     alt="" style="width: 20pt; height: 20pt; border-radius: 50%; margin: auto;">
+                </a>
+            </p>
             <p>Repo. publ.: {{ dict_.public_repos }}</p>
-            <p>Seguindo: {{ dict_.following }}</p>
-            <p>Seguidores: {{ dict_.followers }}</p>
-            <p>Entrou em: {{ dict_.created_at }}</p>
-            <p>Ultimo login: {{ dict_.updated_at }}</p>
+            <p>Seguindo: {{ dict_.following }} &nbsp;&nbsp;<img src="{{ url_for('static', filename='follow.svg')}}" style="width: 20pt; height: 20pt; border-radius: 50%"/></p>
+            <p>Seguidores: {{ dict_.followers }}&nbsp;&nbsp;<img src="{{ url_for('static', filename='like.svg')}}" style="width: 20pt; height: 20pt; border-radius: 50%"/></p>
+            <p>Entrou em: {{ dict_.created_at }}&nbsp;&nbsp;<img src="{{ url_for('static', filename='calendar.svg')}}" style="width: 20pt; height: 20pt; border-radius: 50%"/></p>
+            <p>Ultimo login: {{ dict_.updated_at }}&nbsp;&nbsp;<img src="{{ url_for('static', filename='calendar.svg')}}" style="width: 20pt; height: 20pt; border-radius: 50%"/></p>
         </div>
     </div>
     <div id="comunidade">
